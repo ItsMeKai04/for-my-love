@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>💌 Happy Birthday KB ❤️</h2>
+
+<p id="letter"></p>
+
+<br>
+
+<button onclick="window.location.href='envelope.html'">
+Continue ❤️
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+const text=`Happy Birthday KB ❤️
+
+I know this isn't the biggest gift...
+
+But I wanted to make something with my own effort.
+
+Thank you for always making me smile.
+
+I hope today becomes one of your happiest memories.
+
+Happy Birthday once again.
+
+❤️`;
+
+let i=0;
+
+function type(){
+
+if(i<text.length){
+
+document.getElementById("letter").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(type,35);
+
+}
+
+}
+
+type();
+
+</script>
+
+</body>
+
+</html>

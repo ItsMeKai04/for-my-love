@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Who Are You ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>❤️ Who are you?</h2>
+
+<p>Only one special person can continue...</p>
+
+<input
+type="text"
+id="nameInput"
+placeholder="Enter your nickname">
+
+<br><br>
+
+<button onclick="checkName()">
+Continue ❤️
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function checkName(){
+
+let name=document.getElementById("nameInput").value.trim().toLowerCase();
+
+if(name=="kb"){
+
+window.location.href="letter.html";
+
+}
+
+else{
+
+alert("Hmm... You're not KB 😜");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

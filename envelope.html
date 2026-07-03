@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>One More Thing ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h2>💌 One More Thing...</h2>
+
+<p>Tap the envelope ❤️</p>
+
+<div id="envelope" onclick="openEnvelope()">
+✉️
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function openEnvelope(){
+
+document.getElementById("envelope").innerHTML="💖";
+
+setTimeout(function(){
+
+window.location.href="gallery.html";
+
+},1000);
+
+}
+
+</script>
+
+</body>
+
+</html>
